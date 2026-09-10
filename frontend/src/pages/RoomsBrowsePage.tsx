@@ -133,7 +133,7 @@ export function RoomsBrowsePage() {
         <p className="mt-1 text-sm text-slate-500">
           {isLoading
             ? 'Loading the campus room list…'
-            : `${allRooms.length} rooms across ${buildings.length} buildings.`}
+            : `${(serverRooms ?? []).length} rooms across ${buildings.length} buildings.`}
         </p>
       </div>
 
